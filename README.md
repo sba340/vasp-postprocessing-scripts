@@ -6,7 +6,7 @@ analysis, and phonons.
 
 ## Requirements
 
-Python 3.8 or later. Individual scripts list their own dependencies.
+Python 3.8 or later. Individual scripts list their own dependencies (numpy and matplotlib for most; PyProcar 5.x for the PyProcar wrapper).
 
 ## Scripts
 
@@ -17,7 +17,7 @@ Python 3.8 or later. Individual scripts list their own dependencies.
 | quick_band_plot_and_gap_from_eigenval.py | band_structure | Quick band plot by k-point index with band edge and gap summary from EIGENVAL and OUTCAR (non-spin-polarized) |
 | plot_total_dos_from_doscar.py | band_structure | Plots the total density of states from DOSCAR, spin-polarized or not |
 | plot_band_structure_with_dos.py | band_structure | Plots a band structure next to the total DOS from EIGENVAL, KPOINTS, OUTCAR and DOSCAR, spin-polarized or not |
+| plot_projected_bands_with_pyprocar.py | band_structure | Command-line wrapper for PyProcar 5.x: plain and atom-projected band structures from PROCAR |
 
 Input files are not included. Each script reads standard VASP output from the
 current working directory.
-
